@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gomycode DOM checkpoints  Cart</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="main.js" ></script>
+</head>
+
+<body onload="loadBody()">
+
+    <div class="container flex">
+        <div class="structure">
+          <h1>Basket</h1>
+
+          <table id="table">
+            <thead>
+              <tr>
+                <th>Item name</th>
+
+                <th>Quantity</th>
+                <th>  Unit Price</th>
+                <th>Total</th>
+
+              </tr>
+            </thead>
+            <tbody id="all_products">
+
+            </tbody>
+            <tfoot>
+              <tr>
+                <td><input type="text" id="name_product" placeholder="Item name" contenteditable></td>
+                <td><input  type="number" step="1" id="price_product" value="1000" contenteditable></td>
+                <td></td>
+
+                <td><button type="button" id="add_button">Add an item</button></td>
+              </tr>
+            </tfoot>
+          </table>
+          <h2>Total : <span id="total_display">0 NGN </span></h2>
+        </div>
+      </div>
+
+
+</body>
+</html>
